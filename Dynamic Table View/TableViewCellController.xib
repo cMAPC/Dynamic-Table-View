@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="216" id="KGk-i7-Jjw" customClass="TableViewCellController">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="216"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="379" height="215"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLu-RF-Oea">
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="gcz-bN-7jB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fhx-i5-TWM">
+                        <frame key="frameInset" minX="8" minY="8" width="363" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="j2q-Pa-ONp"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.85381728570000004" green="0.87051887939999995" blue="0.88131953529999996" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="fhx-i5-TWM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="4Q1-kv-96o"/>
+                    <constraint firstItem="QLu-RF-Oea" firstAttribute="top" secondItem="fhx-i5-TWM" secondAttribute="bottom" constant="2" id="Eck-14-cMS"/>
+                    <constraint firstItem="fhx-i5-TWM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="TpP-MK-H3w"/>
+                    <constraint firstItem="QLu-RF-Oea" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="XRu-fM-j6S"/>
+                    <constraint firstItem="fhx-i5-TWM" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="pd6-aT-8FZ"/>
+                    <constraint firstItem="QLu-RF-Oea" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="rOg-Ea-IYo"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="QLu-RF-Oea" secondAttribute="bottom" constant="1.5" id="xvP-0m-UCe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellImage" destination="fhx-i5-TWM" id="eEj-oY-6Md"/>
+                <outlet property="cellText" destination="QLu-RF-Oea" id="jAy-Ok-oEa"/>
+            </connections>
+            <point key="canvasLocation" x="63.5" y="140"/>
+        </tableViewCell>
+    </objects>
+</document>
